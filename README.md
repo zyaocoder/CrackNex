@@ -47,7 +47,7 @@ pip install pillow==8.4.0
 
 ### File Organization
 
-To prepare the LCSD datasets, you need to download all images and labels from above link. Put all images in ``JPEGImages/`` subfolder and all labels in ``SegmentationClassAug/`` subfolder, and two split ``txt`` file into ``ImageSets/`` subfolder.
+To prepare the LCSD datasets, you need to download all images and labels from the above link. Put all images in ``JPEGImages/`` subfolder and all labels in ``SegmentationClassAug/`` subfolder, and two split ``txt`` file into ``ImageSets/`` subfolder. We also provide a zip file of our processed [LCSD](https://drive.google.com/file/d/1a8Q1ng38KfNad2emyWJE4mgGv-xs3Dg4/view?usp=drive_link) dataset.
 ```
     ../                         # parent directory
     ├── ./CrackNex              # current (project) directory
@@ -105,10 +105,12 @@ This codebase is built based on [SSP's baseline code](https://github.com/fanq15/
 
 ## Citation
 ```bibtex
-@article{yao2024cracknex,
+@inproceedings{yao2024cracknex,
   title={Cracknex: a few-shot low-light crack segmentation model based on retinex theory for uav inspections},
   author={Yao, Zhen and Xu, Jiawei and Hou, Shuhang and Chuah, Mooi Choo},
-  journal={arXiv preprint arXiv:2403.03063},
-  year={2024}
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={11155--11162},
+  year={2024},
+  organization={IEEE}
 }
 ```
