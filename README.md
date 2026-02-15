@@ -17,7 +17,7 @@ Routine visual inspections of concrete structures are imperative for upholding t
 ## LCSD Dataset
 We have established a crack segmentation dataset, LCSD. It comprises 102 normal light crack images and 41 low-light crack images with fine-grained annotations.
 
-You can download the datasets from [the link](https://drive.google.com/drive/folders/1K81AjvIFje5BBxG1qxFmfqRhxf0PKNxe?usp=drive_link).
+You can download the datasets from [the link](https://huggingface.co/datasets/Chrisathy/LCSD).
 
 ## Requirements
 
