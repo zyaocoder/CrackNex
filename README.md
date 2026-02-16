@@ -42,12 +42,12 @@ pip install pillow==8.4.0
 ```
 
 ## Data preparation
-**Pretrained model:** [ResNet-50](https://drive.google.com/file/d/1zphUj3ffl8J2HCRq5AjPsdOVojiGuQZB/view?usp=drive_link) | [ResNet-101](https://drive.google.com/file/d/1G6MVe_8ywk3NyHwpWWoUoZtvQ4pWJWj-/view?usp=drive_link)
+**Pretrained model:** [ResNet-50&ResNet-101](https://huggingface.co/Chrisathy/CrackNex)
 
 
 ### File Organization
 
-To prepare the LCSD datasets, you need to download all images and labels from the above link. Put all images in ``JPEGImages/`` subfolder and all labels in ``SegmentationClassAug/`` subfolder, and two split ``txt`` file into ``ImageSets/`` subfolder. We also provide a zip file of our processed [LCSD](https://drive.google.com/file/d/1a8Q1ng38KfNad2emyWJE4mgGv-xs3Dg4/view?usp=drive_link) dataset.
+To prepare the LCSD datasets, you need to download all images and labels from the above link. Put all images in ``JPEGImages/`` subfolder and all labels in ``SegmentationClassAug/`` subfolder, and two split ``txt`` file into ``ImageSets/`` subfolder. We also provide a zip file of our processed [LCSD](https://huggingface.co/Chrisathy/CrackNex) dataset.
 ```
     ../                         # parent directory
     ├── ./CrackNex              # current (project) directory
@@ -84,10 +84,10 @@ Remember to change the path to dataset and checkpoint.
 
 | Method | Setting |   Backbone  | mIoU |
 | :-----: | :-----: | :---------: | :----: |
-| CrackNex (Ours) | 1-shot  |  ResNet-50  | [63.85](https://drive.google.com/file/d/1T9i1S_UlFOzjuSpn7Oeo9RX7BYgQ9jMw/view?usp=drive_link)  |
-| CrackNex (Ours) | 1-shot  |  ResNet-101  | [66.10](https://drive.google.com/file/d/1vM3cRazeLmU2QnLIY4RjS7JTJBfHaCV3/view?usp=drive_link)  |
-| CrackNex (Ours) | 5-shot  |  ResNet-50  | [65.17](https://drive.google.com/file/d/1uADCeaGZQNvr25dqVgXNJcjbZNAIrdI-/view?usp=drive_link)  |
-| CrackNex (Ours) | 5-shot  |  ResNet-101  | [68.82](https://drive.google.com/file/d/1D3R9rCHrP58l48qSOhgtMzmDLvk8-8nf/view?usp=drive_link)  |
+| CrackNex (Ours) | 1-shot  |  ResNet-50  | [63.85](https://huggingface.co/Chrisathy/CrackNex/blob/main/LCSD_resnet50_1shot_63.85.pth)  |
+| CrackNex (Ours) | 1-shot  |  ResNet-101  | [66.10](https://huggingface.co/Chrisathy/CrackNex/blob/main/LCSD_resnet101_1shot_66.10.pth)  |
+| CrackNex (Ours) | 5-shot  |  ResNet-50  | [65.17](https://huggingface.co/Chrisathy/CrackNex/blob/main/LCSD_resnet50_5shot_65.17.pth)  |
+| CrackNex (Ours) | 5-shot  |  ResNet-101  | [68.82](https://huggingface.co/Chrisathy/CrackNex/blob/main/LCSD_resnet101_5shot_68.82.pth)  |
 
 ### Visualization in LCSD
 
